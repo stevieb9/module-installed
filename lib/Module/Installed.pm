@@ -226,7 +226,7 @@ not.
 =head1 SEE ALSO
 
 This module was pretty well copy/pasted from L<Module::Installed::Tiny>, but
-without the significant dependency chain required by that distributions test
+without the significant dependency chain required by that distribution's test
 suite.
 
 =head1 AUTHOR

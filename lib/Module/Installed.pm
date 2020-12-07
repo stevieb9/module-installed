@@ -161,9 +161,11 @@ installed.
 
     use Module::Installed qw(module_installed includes_installed)
 
+    my $module = 'Mock::Sub';
+
     # module_installed()
 
-    if (module_installed('Mock::Sub')) {
+    if (module_installed($module)) {
         require $module;
         $module->import;
 

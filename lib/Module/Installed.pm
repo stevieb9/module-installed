@@ -1,6 +1,6 @@
 package Module::Installed;
 
-our $VERSION = '0.01'; # VERSION
+our $VERSION = '1.00';
 
 use strict;
 use warnings;
@@ -166,6 +166,8 @@ installed.
     if (module_installed('Mock::Sub')) {
         require $module;
         $module->import;
+
+        ...
     }
     else {
         warn "$module is not installed...";
@@ -193,9 +195,6 @@ Verifies whether or not a module or a file's list of includes are installed.
 
 Checks whether a module is installed on your system.
 
-B<Note>: This function requires L<PPI> to be installed. If it is, we'll load it
-and proceed. If it isn't, we C<croak()>.
-
 Parameters:
 
     $name
@@ -208,6 +207,9 @@ Returns: True (C<1>) if the module is found, and false (C<0>) if not.
 
 This function reads in a Perl file, strips out all of its includes (C<use> and
 C<require>), and checks whether each one is installed on the system.
+
+B<Note>: This function requires L<PPI> to be installed. If it is, we'll load it
+and proceed. If it isn't, we C<croak()>.
 
 Parameters:
 

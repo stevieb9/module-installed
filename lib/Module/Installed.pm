@@ -30,12 +30,12 @@ sub includes_installed {
 
     my $PPI = $ENV{MI_TEST_PPI} ? $ENV{MI_TEST_PPI} : 'PPI';
 
-    if (! module_installed($PPI)) {
-        croak("includes_installed() requires PPI, which isn't installed...");
-    }
-
     if (! -f $file) {
         croak("includes_installed() requires a valid Perl file as a parameter...");
+    }
+
+    if (! module_installed($PPI)) {
+        croak("includes_installed() requires PPI, which isn't installed...");
     }
 
     require PPI;
@@ -79,7 +79,6 @@ sub _get_module_source {
 
     return _module_source $name_pm;
 }
-
 sub _module_source {
     my $name_pm = shift;
 

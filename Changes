@@ -1,6 +1,6 @@
 Revision history for Module-Installed
 
-1.02 UNREL
+1.02    2020-12-15
         - Fix badge links in POD
         - Added more tests
         - Added ability for passing in a code references that can operate

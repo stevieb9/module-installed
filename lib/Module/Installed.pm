@@ -153,8 +153,8 @@ Module::Installed - Check whether a module, or a file's list of includes are
 installed.
 
 =for html
-<a href="http://travis-ci.org/stevieb9/mock-sub"><img src="https://secure.travis-ci.org/stevieb9/module_installed.png"/>
-<a href='https://coveralls.io/github/stevieb9/module_installed?branch=master'><img src='https://coveralls.io/repos/stevieb9/module_installed/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
+<a href="http://travis-ci.org/stevieb9/module-installed"><img src="https://secure.travis-ci.org/stevieb9/module-installed.png"/>
+<a href='https://coveralls.io/github/stevieb9/module-installed?branch=master'><img src='https://coveralls.io/repos/stevieb9/module-installed/badge.svg?branch=master&service=github' alt='Coverage Status' /></a>
 
 =head1 SYNOPSIS
 
